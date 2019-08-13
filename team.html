@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Introduction of Project</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+.img{
+	display:flex;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 5px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 600px; 
+  background: #ccc;
+  padding: 120px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  height:600px;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: gray;
+  color: white;
+  text-align: center;
+}
+</style>
+	<div class="img" style="
+    overflow: hidden;
+    height: 50px; <!-- Set the size of the div -->
+    width: 50px;
+    background: url("flower3.jpg"));
+    background-size: 50px 50px; <!-- Set the size of the image -->
+    background-repeat: no-repeat;">
+</div>
+</head>
+<body>
+
+<header>
+  <h2 style="padding-top:10px;">Collabration</h2>
+  <!-- <img src="ml.png" alt="teampic" width="1450px" height="100px" align="middle", padding-left="20px" > -->
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#"><Strong>BACKGROUND</Strong></a></li>
+      <!-- <li><a href="#">Project</a></li>
+      <li><a href="#">Collaboration</a></li> -->
+    </ul>
+  </nav>
+  
+  <article>
+    <!-- <h1 style="text-align='center';">Team Members</h1> -->
+    
+    <img src="team.jpg" alt="teampic" width="850px" height="380px" padding-left="0px" >
+    <p>Our project is to detect trashes to decide which trash can they need to go. It is a good summary for the study of machine learing.</p>
+    <p>Recycling requires a lot of human intuition and judgment, it will be very difficult to implement a viable Machine Learning solution
+    <p>
+	We had a good start in deploying detection and classification models on the Android platform, and consequently it raised our expectation for the progress to come
+	</p>
+	<p>
+	It was mentally frustrating to hit roadblocks, but they are a part of the process and it is normal to fail experiments and step back for another trial
+    </p>
+  </article>
+</section>
+
+<footer>
+	<div class="footer">
+  		<p>@projectWAMP copyright</p>
+	</div>
+</footer>
+
+</body>
+</html>
+
+
+

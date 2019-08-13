@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<!-- <h2 style="color: black;"> <strong>Labels</strong></h2> -->
+<img src="process1.jpg" alt="logo" width="1300px" height="300px" padding-left:400px>
+<div class="row">
+  <div class="column" style="background-color:#60B0F4;">
+    <h2>Blue</h2>
+    <ul>
+      <li>Newspaper</li>
+      <li>Cardboard</li>
+      <li>Egg Cartons</li>
+      <li>Evelops</li>
+      <li>Magazine</li>
+    </ul>
+  </div>
+  <div class="column" style="background-color:#A8E28E;">
+    <h2>Green</h2>
+    <!-- <p>Some text..</p> -->
+      <li>Plastic Bottles</li>
+      <li>Aluminum Cans</li>
+      <li>Glass Bottles</li>
+  </div>
+  
+</div>
+
+</body>
+</html>
+

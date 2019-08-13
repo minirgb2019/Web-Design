@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.p1{
+  background: #A873D2;
+}
+.p2{
+  background: orange;
+}
+.pp{
+  background: #3B6182;
+}
+.image{
+  padding-left: 10px; padding-top: 50px;
+}
+header{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding:20px;
+}
+
+header>img, header>h1{
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex-end;
+}
+.img{
+  border: 10px solid #ddd; /* Gray border */
+  border-radius: 14px;  /* Rounded border */
+}
+</style>
+
+</head>
+<body>
+<div class="pp">
+  <header>
+      <img src="Logo_transparent_color.png" alt="logo" width="100px" height="100px" align="middle" >
+      <h1 align="center" style="color:black;"><b>projectWAMP RECYCLE</b></h1>
+  </header>
+</div>
+<div class="p1">
+  <p class="process1">
+    <h2><strong>STEP1</strong></h2>
+  <!-- <h2 style="color: black;"> <strong>Labels</strong></h2> -->
+    <img src="process1.jpg" alt="logo" width="1250px" height="300px" padding-left:400px; padding-bottom: 250px;>
+  </p>
+</div>
+<div class="p1">
+  <p class="process2">
+    <h2><strong>STEP2</strong></h2>
+  <!-- <h2 style="color: black;"> <strong>Labels</strong></h2> -->
+    <img src="process2.jpg" alt="logo" width="1250px" height="300px" padding-left:400px; padding-top: 250px;>
+  </p>
+</div>
+</body>
+</html>
+
